@@ -11,13 +11,14 @@ export default function Contact() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  const handleChange = ({
+  target: { name, value },
+}: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  setFormData((prev) => ({
+    ...prev,
+    [name]: value,
+  }));
+};
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
