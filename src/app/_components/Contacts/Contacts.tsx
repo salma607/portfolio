@@ -19,14 +19,22 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (formData.name && formData.email && formData.message) {
-      setSubmitted(true);
-      setFormData({ name: "", email: "", phone: "", message: "" });
-      setTimeout(() => setSubmitted(false), 5000);
-    }
-  };
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  if (formData.name && formData.email && formData.message) {
+    setSubmitted(true);
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+
+    setTimeout(() => setSubmitted(false), 5000);
+  }
+};
 
   return (
     <section id="contact" className="py-20 px-4 bg-white">
@@ -39,7 +47,7 @@ export default function Contact() {
             </span>
           </h2>
           <p className="text-gray-700 text-lg">
-            Have questions? We'd love to hear from you!
+            Have questions? We d love to hear from you!
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full mt-4"></div>
         </div>
@@ -80,7 +88,7 @@ export default function Contact() {
                   </h4>
                   <p className="text-gray-700">info@keinsteinkids.com</p>
                   <p className="text-sm text-gray-600">
-                    We'll respond within 24 hours
+                    We ll respond within 24 hours
                   </p>
                 </div>
               </a>
@@ -144,7 +152,7 @@ export default function Contact() {
 
               {submitted && (
                 <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-                  ✅ Thank you! We'll get back to you soon.
+                  ✅ Thank you! We ll get back to you soon.
                 </div>
               )}
 
