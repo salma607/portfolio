@@ -12,30 +12,32 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = ({
-  target: { name, value },
-}: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-  setFormData((prev) => ({
-    ...prev,
-    [name]: value,
-  }));
-};
+    target: { name, value },
+  }: React.ChangeEvent<
+    HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+  >) => {
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  if (formData.name && formData.email && formData.message) {
-    setSubmitted(true);
+    if (formData.name && formData.email && formData.message) {
+      setSubmitted(true);
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
 
-    setTimeout(() => setSubmitted(false), 5000);
-  }
-};
+      setTimeout(() => setSubmitted(false), 5000);
+    }
+  };
 
   return (
     <section id="contact" className="py-20 px-4 bg-white">
@@ -43,14 +45,14 @@ export default function Contact() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">
+            <span className="bg-yellow-400 bg-clip-text text-transparent">
               Get In Touch
             </span>
           </h2>
-          <p className="text-gray-700 text-lg">
+          <p className="text-[var(--gray-text)] text-lg">
             Have questions? We d love to hear from you!
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full mt-4"></div>
+          <div className="w-20 h-1 bg-gradient-to-l from-yellow-400 to-yellow-600 mx-auto rounded-full mt-4"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -64,81 +66,70 @@ export default function Contact() {
             <div className="space-y-6">
               {/* Phone */}
               <a
-                href="tel:+1234567890"
-                className="group flex items-start p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105"
+                href="tel:01017714859"
+                className="group flex items-start p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <div className="text-3xl mr-4">📞</div>
                 <div>
-                  <h4 className="font-bold text-gray-800 group-hover:text-purple-600 transition-colors">
+                  <h4 className="font-bold text-[var-(--gray-text)] group-hover:text-yellow-400 transition-colors">
                     Call Us
                   </h4>
-                  <p className="text-gray-700">+1 (234) 567-890</p>
-                  <p className="text-sm text-gray-600">Mon - Fri, 9AM - 6PM</p>
+                  <p className="text-[var-(--gray-text)]">+02 01017714859</p>
+                  <p className="text-sm text-gray-600">Sun - Thu, 5PM - 10PM <span>
+                    <br></br> Fri - Sat, 9AM - 10PM</span> 
+                    
+                    
+                  </p>
                 </div>
               </a>
 
               {/* Email */}
               <a
                 href="mailto:info@keinsteinkids.com"
-                className="group flex items-start p-6 bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="group flex items-start p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <div className="text-3xl mr-4">✉️</div>
                 <div>
-                  <h4 className="font-bold text-gray-800 group-hover:text-pink-600 transition-colors">
+                  <h4 className="font-bold text-[var(--gray-text)] group-hover:text-yellow-400 transition-colors">
                     Email Us
                   </h4>
-                  <p className="text-gray-700">info@keinsteinkids.com</p>
-                  <p className="text-sm text-gray-600">
-                    We ll respond within 24 hours
-                  </p>
+                  <p className="text-[var(--gray-text)]">taghrid.sharaf@gmail.com</p>
                 </div>
               </a>
 
               {/* Address */}
-              <div className="group flex items-start p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <div className="group flex items-start p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105">
                 <div className="text-3xl mr-4">📍</div>
                 <div>
-                  <h4 className="font-bold text-gray-800">Visit Us</h4>
-                  <p className="text-gray-700">123 Innovation Street</p>
-                  <p className="text-gray-700">Tech City, TC 12345</p>
+                  <h4 className="font-bold text-[var(--gray-text)] group-hover:text-yellow-400 transition-colors">Visit Us</h4>
+                  <p className="text-[var(--gray-text)]">Egypt,Cairo </p>
+                  <p className="text-[var(--gray-text)]">Fifth settlement new cairo</p>
                 </div>
               </div>
 
               {/* Social Links */}
               <div className="pt-4">
-                <h4 className="font-bold text-gray-800 mb-4">Follow Us</h4>
+                <h4 className="font-bold  text-2xl text-[var(--gray-text)] mb-4">Follow Us</h4>
                 <div className="flex gap-4">
-                  {[
-                    {
-                      icon: "f",
-                      label: "Facebook",
-                      color: "from-blue-400 to-blue-600",
-                    },
-                    {
-                      icon: "📷",
-                      label: "Instagram",
-                      color: "from-pink-400 to-red-600",
-                    },
-                    {
-                      icon: "🐦",
-                      label: "Twitter",
-                      color: "from-blue-300 to-blue-500",
-                    },
-                    {
-                      icon: "▶️",
-                      label: "YouTube",
-                      color: "from-red-400 to-red-600",
-                    },
-                  ].map((social, idx) => (
-                    <a
-                      key={idx}
-                      href="#"
-                      className={`p-4 bg-gradient-to-r ${social.color} text-white rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-110`}
-                      title={social.label}
-                    >
-                      {social.icon}
-                    </a>
-                  ))}
+                  <a
+      href="https://www.facebook.com/Keinsteins"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-5 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl 
+                 hover:shadow-xl transition-all duration-300 transform hover:scale-110
+                 flex items-center justify-center"
+      title="Facebook"
+    >
+      {/* Facebook Icon (bigger & clearer) */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="w-7 h-7"
+      >
+        <path d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56V12h2.76l-.44 2.88h-2.32v6.99A10 10 0 0 0 22 12" />
+      </svg>
+    </a>
                 </div>
               </div>
             </div>
@@ -220,7 +211,7 @@ export default function Contact() {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full py-3 px-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                  className="w-full py-3 px-4 bg-gradient-to-l from-yellow-400 to-yellow-600 text-[var(--gray-text)] font-bold rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                 >
                   📨 Send Message
                 </button>
@@ -231,9 +222,6 @@ export default function Contact() {
 
         {/* Footer */}
         <div className="mt-16 pt-8 border-t-2 border-gray-200 text-center">
-          <p className="text-gray-600">
-            &copy; 2024 Keinstein Kids Academy. All rights reserved.
-          </p>
           <p className="text-gray-500 text-sm mt-2">
             Made with ❤️ for kids who dream big
           </p>

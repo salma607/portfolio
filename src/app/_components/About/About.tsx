@@ -1,26 +1,33 @@
 "use client";
-
+import Image from "next/image";
+import logo from "../../../assets/logo.png";
 export default function About() {
   return (
     <section id="about" className="py-20 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent">
+            <span className="bg-yellow-400 bg-clip-text text-transparent">
               About Us
             </span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-l from-yellow-400 to-yellow-600 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Side - Image/Illustration */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-purple-200 to-pink-200 rounded-2xl p-8 h-96 flex items-center justify-center">
+            <div className=" p-8 h-120 flex items-center justify-center">
               <div className="text-center">
-                <div className="text-7xl mb-4">🎓</div>
-                <p className="text-2xl font-bold text-purple-700">Keinstein</p>
-                <p className="text-gray-700">Kids Academy</p>
+                <div className=" mb-4">
+                  <Image
+        src={logo}
+        alt="Keinstein Kids Academy Logo"
+        width={600}
+        height={600}
+      />
+                </div>
+                
               </div>
             </div>
           </div>
@@ -71,7 +78,7 @@ export default function About() {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
           {[
-            { icon: "👨‍🎓", number: "2,500+", label: "Students" },
+            { icon: "👨‍🎓", number: "3,500+", label: "Students" },
             { icon: "👨‍🏫", number: "50+", label: "Instructors" },
             { icon: "🏆", number: "100%", label: "Satisfaction" },
             { icon: "🌍", number: "5+", label: "Years" },
