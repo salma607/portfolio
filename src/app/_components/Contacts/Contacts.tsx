@@ -75,10 +75,11 @@ export default function Contact() {
                     Call Us
                   </h4>
                   <p className="text-[var-(--gray-text)]">+02 01017714859</p>
-                  <p className="text-sm text-gray-600">Sun - Thu, 5PM - 10PM <span>
-                    <br></br> Fri - Sat, 9AM - 10PM</span> 
-                    
-                    
+                  <p className="text-sm text-gray-600">
+                    Sun - Thu, 5PM - 10PM{" "}
+                    <span>
+                      <br></br> Fri - Sat, 9AM - 10PM
+                    </span>
                   </p>
                 </div>
               </a>
@@ -93,7 +94,9 @@ export default function Contact() {
                   <h4 className="font-bold text-[var(--gray-text)] group-hover:text-yellow-400 transition-colors">
                     Email Us
                   </h4>
-                  <p className="text-[var(--gray-text)]">taghrid.sharaf@gmail.com</p>
+                  <p className="text-[var(--gray-text)]">
+                    taghrid.sharaf@gmail.com
+                  </p>
                 </div>
               </a>
 
@@ -101,35 +104,39 @@ export default function Contact() {
               <div className="group flex items-start p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105">
                 <div className="text-3xl mr-4">📍</div>
                 <div>
-                  <h4 className="font-bold text-[var(--gray-text)] group-hover:text-yellow-400 transition-colors">Visit Us</h4>
+                  <h4 className="font-bold text-[var(--gray-text)] group-hover:text-yellow-400 transition-colors">
+                    Visit Us
+                  </h4>
                   <p className="text-[var(--gray-text)]">Egypt,Cairo </p>
-                  <p className="text-[var(--gray-text)]">Fifth settlement new cairo</p>
+                  <p className="text-[var(--gray-text)]">
+                    Fifth settlement new cairo
+                  </p>
                 </div>
               </div>
 
               {/* Social Links */}
               <div className="pt-4">
-                <h4 className="font-bold  text-2xl text-[var(--gray-text)] mb-4">Follow Us</h4>
+                <h4 className="font-bold  text-2xl text-[var(--gray-text)] mb-4">
+                  Follow Us
+                </h4>
                 <div className="flex gap-4">
                   <a
-      href="https://www.facebook.com/Keinsteins"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-5 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl 
-                 hover:shadow-xl transition-all duration-300 transform hover:scale-110
-                 flex items-center justify-center"
-      title="Facebook"
-    >
-      {/* Facebook Icon (bigger & clearer) */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="w-7 h-7"
-      >
-        <path d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56V12h2.76l-.44 2.88h-2.32v6.99A10 10 0 0 0 22 12" />
-      </svg>
-    </a>
+                    href="https://www.facebook.com/Keinsteins"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-5 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl  hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
+                    title="Facebook"
+                  >
+                    {/* Facebook Icon (bigger & clearer) */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="w-7 h-7"
+                    >
+                      <path d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56V12h2.76l-.44 2.88h-2.32v6.99A10 10 0 0 0 22 12" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -138,7 +145,7 @@ export default function Contact() {
           {/* Contact Form */}
           <div>
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">
+              <h3 className="text-2xl font-bold text-[var(--gray-text)] mb-6">
                 Send us a Message
               </h3>
 
@@ -159,8 +166,7 @@ export default function Contact() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition-colors"
-                    placeholder="John Doe"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition-colors"
                   />
                 </div>
 
@@ -174,8 +180,8 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition-colors"
-                    placeholder="john@example.com"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition-colors"
+                   
                   />
                 </div>
 
@@ -189,8 +195,8 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition-colors"
-                    placeholder="+1 (234) 567-890"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition-colors"
+
                   />
                 </div>
 
@@ -203,7 +209,7 @@ export default function Contact() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition-colors h-32 resize-none"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition-colors h-32 resize-none"
                     placeholder="Tell us about your inquiry..."
                   ></textarea>
                 </div>
