@@ -1,0 +1,65 @@
+export const Competitionconstant = [
+  {
+    id: 1,
+    season: "2021 2022",
+    events: [
+      "3 Teams  FLL Explore",
+      "2 Teams  FLL Challenge",
+      "3 Teams  ROBOFEST Parade",
+    ],
+  },
+  {
+    id: 2,
+    season: "2022 2023",
+    events: [
+      "8 Teams  FLL Explore",
+      "3 Teams  FLL Challenge",
+      "5 Teams  ROBOFEST Parade",
+    ],
+  },
+  {
+    id: 3,
+    season: "2023 2024",
+    events: [
+      "15 Teams  FLL Explore",
+      "3 Teams  FLL Challenge",
+      "10 Teams  ROBOFEST",
+      "4 Teams  Robotourney",
+      "15 Teams  MRC",
+      "4 Teams  ORIC",
+    ],
+  },
+  {
+    id: 4,
+    season: "2024 2025",
+    events: [
+      "15 Teams  FLL Explore",
+      "2 Teams  FLL Challenge",
+      "6 Teams  ROBOFEST",
+      "6 Teams  Robotourney",
+      "19 Teams  MRC",
+      "4 Teams  ORIC",
+      "1 Team  Technoxian",
+      "3 Teams  ROBOTEX",
+      "1 Team  RoboRAVE",
+      "4 Teams  Robotourney",
+    ],
+  },
+  {
+    id: 5,
+    season: "2025 2026",
+    events: [
+      "15 Teams  FLL Explore",
+      "1 Team  FLL Challenge",
+      "6 Teams  ROBOFEST",
+      "6 Teams  Robotourney",
+      "10 Teams  MRC",
+      "4 Teams  ORIC",
+      "5 Teams  Technoxian",
+      "8 Teams  ROBOTEX",
+      "11 Teams  RoboRAVE",
+      "4 Teams  Robotourney",
+      "2 Teams  Fibonacci",
+    ],
+  },
+];

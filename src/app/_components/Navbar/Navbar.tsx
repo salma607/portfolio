@@ -27,6 +27,7 @@ export default function Navbar() {
   const navItems = [
     { id: "home", label: "Home", icon: "🏠" },
     { id: "about", label: "About Us", icon: "ℹ️" },
+    { id: "competitions", label: "Competitions", icon: "🏆" },
     { id: "courses", label: "Courses", icon: "📚" },
     { id: "contact", label: "Contact", icon: "📞" },
   ];

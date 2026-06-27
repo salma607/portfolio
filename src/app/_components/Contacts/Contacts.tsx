@@ -74,7 +74,7 @@ export default function Contact() {
                   <h4 className="font-bold text-[var-(--gray-text)] group-hover:text-yellow-400 transition-colors">
                     Call Us
                   </h4>
-                  <p className="text-[var-(--gray-text)]">+02 01017714859</p>
+                  <p className="text-[var-(--gray-text)]">+20 01017714859 +20 01001590033</p>
                   <p className="text-sm text-gray-600">
                     Sun - Thu, 5PM - 10PM{" "}
                     <span>
@@ -95,7 +95,7 @@ export default function Contact() {
                     Email Us
                   </h4>
                   <p className="text-[var(--gray-text)]">
-                    taghrid.sharaf@gmail.com
+                    Info@keinstein.academy
                   </p>
                 </div>
               </a>

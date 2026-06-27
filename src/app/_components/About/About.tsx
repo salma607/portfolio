@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import logo from "../../../assets/logo.png";
-import Competitions from "./Competitions";
 export default function About() {
   const [showStory, setShowStory] = useState(false);
   const [showMission, setShowMission] = useState(false);
@@ -12,7 +11,7 @@ export default function About() {
     <section id="about" className="py-20 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
         {/* Title */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               About Us
@@ -40,9 +39,7 @@ export default function About() {
           {/* Right Side */}
           <div>
             {/* Story */}
-            <h3 className="text-3xl font-bold text-gray-800 mb-4">
-              Our Story
-            </h3>
+            <h3 className="text-3xl font-bold text-gray-800 mb-4">Our Story</h3>
 
             <p
               className={`text-gray-700 leading-relaxed mb-3 transition-all duration-300 ${
@@ -50,28 +47,21 @@ export default function About() {
               }`}
             >
               Founded in 2018, My story began when I got pregnant. I kept
-              dreaming of meeting my little one, picturing how I would watch
-              him grow and flourish. I kept searching every day on how to raise
-              him and how to be the perfect mom. I wanted to raise a gifted
-              genius with an influential, confident, independent, successful,
-              and ambitious personality.
-
-              I was seeking answers for many questions:
-              How to prevent him from watching too much TV?
-              How to avoid smartphone addiction?
-              How to control tantrums?
-              How to become not only his mom but also his best friend and role
-              model?
-
-              I wondered if spending all my time with him would make him
-              dependent, or if focusing too much on work would distance us.
-
-              So I decided to create the perfect balance between enjoying my
-              career and spending quality educational time with my son. I wanted
-              to raise a brilliant human being capable of changing the world
-              through creativity, inventions, and scientific achievements.
-
-              That dream became Keinstein Academy ❤️
+              dreaming of meeting my little one, picturing how I would watch him
+              grow and flourish. I kept searching every day on how to raise him
+              and how to be the perfect mom. I wanted to raise a gifted genius
+              with an influential, confident, independent, successful, and
+              ambitious personality. I was seeking answers for many questions:
+              How to prevent him from watching too much TV? How to avoid
+              smartphone addiction? How to control tantrums? How to become not
+              only his mom but also his best friend and role model? I wondered
+              if spending all my time with him would make him dependent, or if
+              focusing too much on work would distance us. So I decided to
+              create the perfect balance between enjoying my career and spending
+              quality educational time with my son. I wanted to raise a
+              brilliant human being capable of changing the world through
+              creativity, inventions, and scientific achievements. That dream
+              became Keinstein Academy ❤️
             </p>
 
             <button
@@ -91,15 +81,16 @@ export default function About() {
                 !showMission && "line-clamp-4"
               }`}
             >
-              At Keinstein Academy, we believe innovation begins with young minds. With more than 8 years of expertise in robotics and coding, our mission is to empower the next generation through hands-on learning, creativity, and advanced technology education.
-
-We are dedicated to developing future innovators by providing high-quality training in:
-
-Advanced Robotics Programming
-Artificial Intelligence & Machine Learning
-Competitive Robotics
-
-Our goal is to inspire students to think critically, solve real-world problems, and confidently compete on both local and international stages.
+              At Keinstein Academy, we believe innovation begins with young
+              minds. With more than 8 years of expertise in robotics and coding,
+              our mission is to empower the next generation through hands-on
+              learning, creativity, and advanced technology education. We are
+              dedicated to developing future innovators by providing
+              high-quality training in: Advanced Robotics Programming Artificial
+              Intelligence & Machine Learning Competitive Robotics Our goal is
+              to inspire students to think critically, solve real-world
+              problems, and confidently compete on both local and international
+              stages.
             </p>
 
             <button
@@ -126,9 +117,7 @@ Our goal is to inspire students to think critically, solve real-world problems, 
                   key={idx}
                   className="flex items-center text-[var(--gray-text)] font-medium"
                 >
-                  <span className="mr-3 text-xl">
-                    {item.substring(0, 2)}
-                  </span>
+                  <span className="mr-3 text-xl">{item.substring(0, 2)}</span>
 
                   {item.substring(2)}
                 </li>
@@ -138,7 +127,7 @@ Our goal is to inspire students to think critically, solve real-world problems, 
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 ">
           {[
             { icon: "👨‍🎓", number: "3,500+", label: "Students" },
             { icon: "👨‍🏫", number: "50+", label: "Instructors" },
@@ -160,7 +149,6 @@ Our goal is to inspire students to think critically, solve real-world problems, 
           ))}
         </div>
       </div>
-      <Competitions/>
     </section>
   );
 }

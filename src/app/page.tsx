@@ -1,4 +1,5 @@
 import About from "./_components/About/About";
+import Competitions from "./_components/About/Competitions";
 import Contact from "./_components/Contacts/Contacts";
 import Courses from "./_components/Courses/Courses";
 import Hero from "./_components/Hero/Hero";
@@ -10,8 +11,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Competitions />
       <Courses />
       <Contact />
+     
     </main>
   );
 }

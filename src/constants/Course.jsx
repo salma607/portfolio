@@ -5,7 +5,7 @@ export const Course = [
     ageGroup: "Ages4-5",
     color: "from-red-400 to-orange-400",
     icon: "🧮",
-    description: " LEGO Duplo, STEM Park, Coding Express, MatataBot Learn basics through play & storytelling ",
+    fullDescription: " LEGO Duplo, STEM Park, Coding Express, MatataBot Learn basics through play & storytelling ",
     features: [" Creativity", "problem-solving", "early STEM skills through play"],
   },
   {
@@ -14,7 +14,7 @@ export const Course = [
     ageGroup: "Ages 5-8",
     color: "from-blue-400 to-gray-400",
     icon: "🤖",
-    description: "Large blocks designed for little handsWeDo 2.0: Build, code, and automate with LEGO models ",
+    fullDescription: "Large blocks designed for little handsWeDo 2.0: Build, code, and automate with LEGO models ",
     features: ["Motor Skills", "Imagination", "Fun Learning"],
   },
   {
@@ -23,7 +23,7 @@ export const Course = [
     ageGroup: "Ages 8-11",
     color: "from-yellow-400 to-orange-400",
     icon: "⭐",
-    description: "Spike Prime: Advanced builds, coding, and robotics. Mindstorm Inventor: Design, build, and code complex robots.",
+    fullDescription: " Spike Prime: Robotics, coding, and AI.  Mindstorm EV3: Advanced robotics and programming.  ",
     features: ["Coding Basics", "Game Logic", "Creative Thinking"],
   },
   {
@@ -32,7 +32,7 @@ export const Course = [
     ageGroup: "Ages 11-16",
     color: "from-green-600 to-blue-200",
     icon: "👑",
-    description: " Spike Prime (advanced): Robotics, coding, and AI.  Mindstorm EV3: Advanced robotics and programming.  ",
+    fullDescription: " Spike Prime (advanced): Robotics, coding, and AI.  Mindstorm EV3: Advanced robotics and programming.  ",
     features: ["Coding Basics", "Game Logic", "Creative Thinking"],
   },
   {
@@ -41,7 +41,7 @@ export const Course = [
     ageGroup: "Ages 9-14",
     color: "from-gray-400 to-purple-400",
     icon: "🎮",
-    description: "Students learn core programming concepts, game mechanics, animation, and creative storytelling using beginner-friendly development tools.",
+    fullDescription: "Students learn core programming concepts, game mechanics, animation, and creative storytelling using beginner-friendly development tools.",
     features: ["Coding Basics", "Game Logic", "Creative Thinking"],
   },
   {
@@ -50,7 +50,7 @@ export const Course = [
     ageGroup: "Ages 10-15",
     color: "from-teal-400 to-blue-400",
     icon: "🎨",
-    description: "Explore creativity through designing and modeling exciting 3D objects, characters, and environments.",
+    fullDescription: "Explore creativity through designing and modeling exciting 3D objects, characters, and environments.",
     features: ["3D Modeling", "Spatial Awareness", "Design Thinking"],
   },
   {
@@ -59,7 +59,7 @@ export const Course = [
     ageGroup: "Ages 11-16",
     color: "from-yellow-400 to-amber-200",
     icon: "⚡",
-    description: "Learn how electronic components work together while building creative projects using LEDs, buzzers, motors, and  microcontrollers.",
+    fullDescription: "Learn how electronic components work together while building creative projects using LEDs, buzzers, motors, and  microcontrollers.",
     features: ["Circuit Design", "Experimentation", "STEM Skills"],
   },
   {
@@ -68,7 +68,7 @@ export const Course = [
     ageGroup: "Ages 12-17",
     color: "from-green-300 to-emerald-500",
     icon: "🐍",
-    description: "The Coding course introduces kids to the fundamentals of programming, helping them understand how software and digital applications are built.",
+    fullDescription: "The Coding course introduces kids to the fundamentals of programming, helping them understand how software and digital applications are built.",
     features: ["Programming", "Logic", "Advanced Coding"],
   },
 ];

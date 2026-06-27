@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useState } from "react";
 import { Course } from "./../../../constants/Course";
 
@@ -42,11 +42,13 @@ export default function Courses() {
                 </div>
 
                 <div>
-                  <p className="text-sm mb-4">{course.description}</p>
+                  <p className="text-sm mb-4">{course.fullDescription}</p>
 
-                  <button className="w-full py-3 px-6 rounded-full font-bold bg-white text-gray-800">
-                    Learn More
-                  </button>
+                  <Link href={`/courses/${course.id}`}>
+                    <button className="w-full py-3 px-6 rounded-full font-bold bg-white text-gray-800">
+                      Learn More
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
